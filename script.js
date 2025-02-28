@@ -4,12 +4,15 @@
 
     window.Telegram.WebApp.ready();
 
+
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             const target = button.getAttribute("data-target");
 
             // Убираем активный класс у всех кнопок
             buttons.forEach(btn => btn.classList.remove("active"));
+            console.log('Изменение');
+            
             // Добавляем активный класс нажатой кнопке
             button.classList.add("active");
 
@@ -20,3 +23,7 @@
         });
     });
 
+    window.Telegram.WebApp.initDataUnsafe;
+    const telegram_id = window.Telegram.WebApp.user.user.id
+
+    telegram_id_HTML.textContent = `${telegram_id}`
