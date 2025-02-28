@@ -2,13 +2,20 @@
     const sections = document.querySelectorAll(".tab-content");
     const telegram_id_HTML = document.getElementById('telegram_id')
 
-    window.Telelgram.WebApp.ready()
-    window.Telelgram.WebApp.expand()
+    window.Telegram.WebApp.ready();
 
-    window.Telelgram.WebApp.initDataUnsafe
-    const telegram_id = user.user.id
 
-    telegram_id_HTML.textContent = `${telegram_id}`
+
+
+
+
+
+
+
+
+
+
+
 
 
     buttons.forEach(button => {
