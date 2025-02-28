@@ -23,7 +23,7 @@
         });
     });
 
-    window.Telegram.WebApp.initDataUnsafe;
-    const telegram_id = window.Telegram.WebApp.user.user.id
+    const userData = window.Telegram.WebApp.initDataUnsafe;
+    const telegram_id = userData.user.id;
 
     telegram_id_HTML.textContent = `${telegram_id}`
