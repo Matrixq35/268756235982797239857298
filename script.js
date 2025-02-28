@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
     if (window.Telegram?.WebApp) {
         window.Telegram.WebApp.ready(); // Telegram WebApp готов
         window.Telegram.WebApp.expand(); // Разворачиваем WebApp
@@ -46,4 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-});
+
