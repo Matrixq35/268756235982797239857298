@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram WebApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+</head>
+
+<body>
+
+    <div class="content">
+        <section id="home" class="tab-content active">
+            <h1>Главная</h1>
+            <p>Добро пожаловать в приложение!<span id="telegram_id"></span></p>
+        </section>
+        <section id="leaderboard" class="tab-content">
+            <h1>Лидерборд</h1>
+            <p>Таблица лидеров будет здесь.</p>
+        </section>
+        <section id="tasks" class="tab-content">
+            <h1>Задания</h1>
+            <p>Список заданий для выполнения.</p>
+        </section>
+    </div>
+
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-target="home">🏠 Главная</button>
+        <button class="nav-btn" data-target="leaderboard">🏆 Лидерборд</button>
+        <button class="nav-btn" data-target="tasks">📝 Задания</button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
