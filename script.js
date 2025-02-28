@@ -5,6 +5,12 @@
     window.Telegram.WebApp.ready();
 
 
+    const userData = window.Telegram.WebApp.initDataUnsafe;
+    const telegram_id = userData.user.id;
+
+    telegram_id_HTML.textContent = `${telegram_id}`;
+
+
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             const target = button.getAttribute("data-target");
@@ -22,8 +28,3 @@
             document.getElementById(target).classList.add("active");
         });
     });
-
-    const userData = window.Telegram.WebApp.initDataUnsafe;
-    const telegram_id = userData.user.id;
-
-    telegram_id_HTML.textContent = `${telegram_id}`
