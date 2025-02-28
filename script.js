@@ -1,4 +1,4 @@
-    if (window.Telegram?.WebApp) {
+    if (window.Telegram.WebApp) {
         window.Telegram.WebApp.ready(); // Telegram WebApp готов
         window.Telegram.WebApp.expand(); // Разворачиваем WebApp
     } else {
@@ -10,7 +10,7 @@
 
     // Получаем данные пользователя
     const userData = window.Telegram.WebApp.initDataUnsafe;
-    const telegram_id = userData?.user?.id || "Неизвестный ID";
+    const telegram_id = userData.user.id || "Неизвестный ID";
 
     // Выводим ID, если элемент существует
     if (telegram_id_HTML) {
